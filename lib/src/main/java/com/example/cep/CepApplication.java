@@ -17,6 +17,7 @@ public class CepApplication {
         SpringApplication app = new SpringApplication(CepApplication.class);
         app.setAdditionalProfiles("kafka");
         app.run(args);
+        System.out.println("ttttt");
     }
 
     @Bean(destroyMethod = "shutdown", initMethod = "start")
